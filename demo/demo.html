@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+</head>
+<body>
+	<style>
+		#box {width: 500px;height: 500px;border: 1px solid #333;margin:50px auto;overflow:hidden;clear:left}
+	</style>
+	
+	<script type="text/javascript">
+	window.onload = function () {
+		var oDropBox = document.getElementById('box');
+		oDropBox.addEventListener('dragover',function (e) {
+			e.stopPropagation();
+            e.preventDefault();
+
+		},false);
+		oDropBox.addEventListener('drop', handleDrop, false);
+		function handleDrop (e) {
+			e.stopPropagation();
+　　        e.preventDefault();
+		};
+	};
+		
+	</script>
+	<div id="box">123123</div>
+</body>
+</html>

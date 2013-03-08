@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>滤镜</title>
+	<link rel="stylesheet" href="../css/filter.css">
+	<script src="../js/sea.js" data-main="../js/main"></script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="box" id="box">
+			<em class="mask" style="display:none;"></em>
+			<em class="loading" style="display:none;"></em>
+		</div>
+		<div id="wrapper" class="scroll-box">
+			<div class="scroll" id="scroller">
+				<!-- <ul id="scroller">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul> -->
+			</div>
+			
+		</div>
+	</div>
+</body>
+<!--
+<script type="text/javascript">
+	$(function () {
+		var itemWidth = $("#scroller li:first").outerWidth(true);
+		var itemNum = $("#scroller li").length;
+		var boxWidth = itemNum * itemWidth;
+		$(".scroll").css("width",boxWidth+"px");
+	});
+	var scroll = new iScroll('wrapper',{
+		hScroll:true,
+		vScroll:false,
+		hScrollbar:false,
+		vScrollbar:false,
+		fadeScrollbar:true
+	});
+</script>
+-->
+<script type="text/javascript">
+
+	// box.ondrop = function (e) {
+	// 	e.stopPropagation();
+	// 	e.preventDefault();
+	// 	alert('1')
+	// };
+	// box.ondragend = function (e) {
+	// 	alert(333);
+	// };
+	// box.addEventListener('drop',function (e) {
+	// 	e.preventDefault();
+	// 	alert(1);
+	// })
+</script>
+</html>
